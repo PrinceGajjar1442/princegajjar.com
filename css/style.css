@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://source.unsplash.com/WLUHO9A_xik/1600x900");
+    background-blend-mode: rgba(0,0,0,0.3);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0,0.7);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    
+
+}
+nav .logo{
+    width: 25%;
+    text-align:center;
+    /* background: red */
+    ;
+}
+nav .menu{
+    width: 40%;
+    
+    display: flex;
+    justify-content: space-around;
+
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+}
+nav .menu a:first-child{
+    color: #00b894;
+    text-shadow: 2px 2px 2px black;
+}
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+section{
+
+}
+section h3{
+
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    /* color: #eee; */
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline:none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+section .btnOne{
+    /* background-color: #00b894; */
+    background: white;
+    color: black;
+}
+.btnOne:hover{
+    background-color: #00b894;
+    color: black;
+}
+section .btnTwo{
+    background-color: #00b894;
+    color: white;
+}
+.btnTwo:hover{
+    background-color: white;
+    color: black;
+}
+div.logo h1{
+    animate-duration: 800ms;
+    animate-delay: 0.9s;
+}
+.changetext:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+color:#00b894;
+
+}
+@keyframes changetext{
+    0%{
+        content: "Prince";
+    }
+    20%{content: HELLO;}
+    34%{content: India;}
+    50%{content: Gajjar;}
+    100%{content: YO;}
+    transition: all .5s ease;
+}
